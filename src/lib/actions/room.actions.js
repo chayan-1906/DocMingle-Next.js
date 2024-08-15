@@ -3,7 +3,7 @@
 import {nanoid} from "nanoid";
 import {liveblocks} from "@/lib/liveblocks";
 import {revalidatePath} from "next/cache";
-import {homePath} from "@/globals/Routes";
+import {documentPath, homePath} from "@/globals/Routes";
 import {parseStringify} from "@/lib/utils";
 
 export const createDocument = async ({userId, email}) => {
@@ -52,5 +52,21 @@ export const getDocument = async ({roomId, userId}) => {
         return parseStringify(room);
     } catch (e) {
         console.log(`Error happened while getting a room: ${e}`);
+    }
+}
+
+export const updateDocument = async (roomId, title) => {
+    try {
+        const updatedRoom = await liveblocks.updateRoom(roomId, {
+            metadata: {
+                title
+            },
+        });
+
+        revalidatePath(documentPath(roomId));
+
+        return parseStringify(updatedRoom);
+    } catch (error) {
+        console.log(`Error happened while updating a room: ${error}`);
     }
 }

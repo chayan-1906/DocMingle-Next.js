@@ -6,8 +6,8 @@ _npx create-next-app@latest_
 
 ## Dependencies -
 
-### Clerk - 
-    npm i 
+### Clerk - https://www.npmjs.com/package/@clerk/nextjs
+    npm i @clerk/nextjs
 
 ### JSM Editor - https://www.npmjs.com/package/jsm-editor
     npm i jsm-editor
@@ -22,3 +22,14 @@ _npx create-next-app@latest_
 
 ### NanoID - https://www.npmjs.com/package/nanoid
     npm i nanoid
+
+### Shadcn/UI - https://ui.shadcn.com/docs/installation/next
+    npx shadcn-ui@latest init
+
+# Shadcn/UI Components -
+
+### Button - https://ui.shadcn.com/docs/components/button
+    npx shadcn-ui@latest add button
+
+### Input - https://ui.shadcn.com/docs/components/input
+    npx shadcn-ui@latest add input
