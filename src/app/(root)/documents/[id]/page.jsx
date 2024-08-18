@@ -3,6 +3,7 @@ import {getDocument} from "@/lib/actions/room.actions";
 import {currentUser} from "@clerk/nextjs/server";
 import {redirect} from "next/navigation";
 import {homePath, signInPath} from "@/globals/Routes";
+import {getClerkUsers} from "@/lib/actions/user.actions";
 
 async function DocumentPage({params}) {
     const clerkUser = await currentUser();
@@ -14,9 +15,19 @@ async function DocumentPage({params}) {
 
     if (!room) redirect(homePath);
 
+    const userIds = Object.keys(room.usersAccesses);
+    const users = await getClerkUsers({userIds});
+
+    const usersData = users.map((user) => ({
+        ...user,
+        userType: room.usersAccesses[user.email]?.includes('room:write') ? 'editor' : 'viewer',
+    }));
+
+    const currentUserType = room.usersAccesses[clerkUser.emailAddresses[0].emailAddress]?.includes('room:write') ? 'editor' : 'viewer';
+
     return (
         <main className={'flex flex-col w-full items-center'}>
-            <CollaborativeRoom roomId={roomId} roomMetadata={room.metadata}/>
+            <CollaborativeRoom roomId={roomId} roomMetadata={room.metadata} users={usersData} currentUserType={currentUserType}/>
         </main>
     );
 }
