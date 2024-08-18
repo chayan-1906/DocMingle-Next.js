@@ -23,6 +23,10 @@ _npx create-next-app@latest_
 ### NanoID - https://www.npmjs.com/package/nanoid
     npm i nanoid
 
+### Liveblocks React Lexical
+    npm i @liveblocks/react-lexical
+
+
 ### Shadcn/UI - https://ui.shadcn.com/docs/installation/next
     npx shadcn-ui@latest init
 
