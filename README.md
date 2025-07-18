@@ -8,7 +8,7 @@
 
 > Real-time collaborative document editor (Google Docs clone) built with Next.js, featuring live editing, cursors, comments, and rich text formatting.
 
-![logo](https://github.com/user-attachments/assets/b9f6c4e6-4928-4a0d-b46c-09637365b805)
+![logo](https://raw.githubusercontent.com/chayan-1906/DocMingle-Next.js/master/public/assets/icons/logo-icon.svg)
 
 ## ✨ Features
 
