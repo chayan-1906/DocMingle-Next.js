@@ -27,10 +27,10 @@
 ## 📱 Screenshots
 
 <div>
-  <img src="https://github.com/user-attachments/assets/f6a5e7b3-d3a3-4c06-b339-167fed4aad9d" width="200" alt="Login Page" />
-  <img src="https://github.com/user-attachments/assets/339c4f48-a0e6-451e-94c1-5692e2fba71a" width="200" alt="Dashboard" />
-  <img src="https://github.com/user-attachments/assets/7e56250e-b00d-464b-bd00-4ca5ae817ee7" width="200" alt="Document Editor" />
-  <img src="https://github.com/user-attachments/assets/c597d487-9831-4996-9a0c-56d88198aa3c" width="200" alt="Document Editor" />
+  <img src="https://github.com/user-attachments/assets/f6a5e7b3-d3a3-4c06-b339-167fed4aad9d" width="500" alt="Login Page" />
+  <img src="https://github.com/user-attachments/assets/339c4f48-a0e6-451e-94c1-5692e2fba71a" width="500" alt="Dashboard" />
+  <img src="https://github.com/user-attachments/assets/7e56250e-b00d-464b-bd00-4ca5ae817ee7" width="500" alt="Document Editor" />
+  <img src="https://github.com/user-attachments/assets/c597d487-9831-4996-9a0c-56d88198aa3c" width="500" alt="Document Editor" />
 </div>
 
 ## 🏗️ Tech Stack
